@@ -7,8 +7,10 @@ Buffers stores data as hexadecimal format.
 for Each character representation it uses 1byte (8bit) 00 (each 0 represents a bit 0000 0000)
 largest umber it can store in one byte is ff in hexadecimal wich is 1111 1111 in binary and which is 255 in decimal
 
+Mostly Buffers are wrapped by Streams, every time we habndle to upload video, send a file we are using buffers but we do not touch it directly but using streams which uses Buffer for this operations.
+
 ## Interesing Facts
-1. Buffer is a subclass of Uint8Array : =>
+1. Buffer is a subclass of Uint8Array : => (ES6 introduced Uint8Array: a typed array where eah element in this array is 8 bit)
    class FastBuffer extends Uint8Array {}
    FastBuffer.prototype.constructor = Buffer;
    Buffer.prototype = FastBuffer.prototype;
