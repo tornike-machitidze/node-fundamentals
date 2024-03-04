@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: red;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('./horse.jpg');
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 200px;
+  border: 1px solid red;
+  padding: 50px 0;
+}
+
+input[type='submit'] {
+  margin: 50px 0;
+  padding: 5px 10px;
+}
